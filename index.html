@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #333;
+      font-size: 1.6em;
+      color: #eee;
+      font-weight: 600;
+    }
+    header {
+      width: 100%;
+      height: 700px;
+      background: url('assets/images/bkg1.png') no-repeat center/cover;
+      padding: 50px 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #logo {
+      width: 160px;   
+      height: auto;   
+      display: block; 
+      margin: 20px auto; 
+    } 
+    nav {
+      width: 100%;
+      height: 80px;
+      background: #eee;
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+    a {
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #333;
+      margin: 0 21px;
+    }
+    a:hover {
+      color: #00f;
+      text-decoration: underline;
+    }
+    main {
+      width: 100%;
+      background: #00f;
+    }
+    #about {
+      width: 100%;
+      min-height: 700px;
+      background: linear-gradient(to right, #0a2a88, #59cde9);
+      border-bottom: 1px solid #222;
+      padding: 50px 100px;
+      overflow: hidden;
+    }
+    #bioPic {
+      float: left;
+      max-width: 420px;
+      border-radius: 16px;
+      border: 4px solid #fff;
+      margin-right: 50px;
+    }
+    #bioText {
+      overflow: hidden;
+      max-width: 600px;
+      color: #eee;
+    }
+    #bioText h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    #bioText p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+    #skills {
+      width: 100%;
+      background: linear-gradient(to right, #EF9393, #E17DC2, #998EE0, #43ADD0, #8BDEDA);
+      border-bottom: 1px solid #222;
+      padding: 50px 100px;
+      text-align: center;
+    }
+    .skill {
+      width: 300px;
+      height: 300px;
+      background: #777;
+      color: #fff;
+      border: 1px solid #333;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 25px;
+      text-align: center;
+    }
+    .topSkill {
+      background: #222121;
+      padding: 25px 0;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .bottomSkill {
+      padding: 50px 25px;
+    }
+    .bottomSkill > i {
+      font-size: 4em;
+    }
+    #contact {
+      width: 100%;
+      height: 700px;
+      background: linear-gradient(to right, #43303b, #6a1548);
+      border-bottom: 1px solid #1c1b1b;
+      padding: 50px 100px;
+    }
+    #contactForm {
+      padding: 20px;
+      max-width: 60%;
+      margin: 50px auto;
+      border-radius: 8px;
+      background: linear-gradient(to right, #e9e4f0, #d3cce3);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      width: 100%;
+      height: 200px;
+      background: #eee;
+      margin-bottom: 100px;
+      color: #333;
+      text-align: center;
+      padding-top: 20px;
+      font-size: .9em;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <img src="assets/images/logo.png" alt="Logo" id="logo">
+  </header>
+
+ 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  
+  <main>
+
+  
+    <section id="about">
+      <img src="assets/images/bioPic.jpeg" alt="Bahar's Bio" id="bioPic">
+      <div id="bioText">
+        <h1>Hello, I'm Bahar Aydemir!</h1>
+        <p>I'm a UI Developer & QA Automation Tester with over 3 years of experience building responsive, user-friendly web applications. I love creating visually engaging digital experiences while ensuring quality and performance.</p>
+      </div>
+    </section>
+
+  
+    <section id="skills">
+      <div class="skill">
+        <div class="topSkill">HTML & CSS</div>
+        <div class="bottomSkill"><i class="fa-solid fa-code"></i></div>
+      </div>
+      <div class="skill">
+        <div class="topSkill">JavaScript</div>
+        <div class="bottomSkill"><i class="fa-brands fa-js"></i></div>
+      </div>
+      <div class="skill">
+        <div class="topSkill">QA Testing</div>
+        <div class="bottomSkill"><i class="fa-solid fa-check"></i></div>
+      </div>
+    </section>
+
+    
+    <section id="contact">
+      <form id="contactForm">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  
+  <footer>
+    &copy; 2026 Bahar Aydemir. All rights reserved.
+  </footer>
+
+</body>
+</html>
